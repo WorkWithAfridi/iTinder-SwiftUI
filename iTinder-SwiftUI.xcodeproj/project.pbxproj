@@ -53,7 +53,11 @@
 		EF2614252BD0E450007A9C76 /* iTinder-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				EF2614262BD0E450007A9C76 /* iTinder_SwiftUIApp.swift */,
+				EF26143D2BD0E4CF007A9C76 /* Utils */,
+				EF26143C2BD0E4CA007A9C76 /* Shared */,
+				EF26143B2BD0E4C3007A9C76 /* Extensions */,
+				EF2614392BD0E49F007A9C76 /* Core */,
+				EF2614362BD0E488007A9C76 /* App */,
 				EF2614282BD0E450007A9C76 /* ContentView.swift */,
 				EF26142A2BD0E450007A9C76 /* Item.swift */,
 				EF26142C2BD0E451007A9C76 /* Assets.xcassets */,
@@ -68,6 +72,82 @@
 				EF26142F2BD0E451007A9C76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF2614362BD0E488007A9C76 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF2614262BD0E450007A9C76 /* iTinder_SwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EF2614392BD0E49F007A9C76 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EF26143F2BD0E4F7007A9C76 /* Cards */,
+				EF2614422BD0E505007A9C76 /* Messaging */,
+				EF2614402BD0E4FB007A9C76 /* Profile */,
+				EF2614412BD0E500007A9C76 /* Search */,
+				EF26143E2BD0E4EF007A9C76 /* TabBar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EF26143B2BD0E4C3007A9C76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF26143C2BD0E4CA007A9C76 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EF26143D2BD0E4CF007A9C76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF26143E2BD0E4EF007A9C76 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EF26143F2BD0E4F7007A9C76 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		EF2614402BD0E4FB007A9C76 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EF2614412BD0E500007A9C76 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EF2614422BD0E505007A9C76 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messaging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
