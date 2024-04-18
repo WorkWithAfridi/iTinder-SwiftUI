@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhosphorSwift
 
 struct MainTabView: View {
     var body: some View {
@@ -22,7 +23,8 @@ struct MainTabView: View {
                 .tag(1)
             Text("Inbox View")
                 .tabItem {
-                    Image(systemName: "bubble")
+                    Image(.bubble)
+//                        .renderingMode(.template)
                 }
                 .tag(2)
             Text("Profile View")
@@ -31,6 +33,7 @@ struct MainTabView: View {
                 }
                 .tag(3)
         }
+        .tint(.primary)
     }
 }
 

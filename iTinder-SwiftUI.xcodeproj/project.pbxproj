@@ -9,17 +9,16 @@
 /* Begin PBXBuildFile section */
 		EF2614272BD0E450007A9C76 /* iTinder_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614262BD0E450007A9C76 /* iTinder_SwiftUIApp.swift */; };
 		EF2614292BD0E450007A9C76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614282BD0E450007A9C76 /* ContentView.swift */; };
-		EF26142B2BD0E450007A9C76 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26142A2BD0E450007A9C76 /* Item.swift */; };
 		EF26142D2BD0E451007A9C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF26142C2BD0E451007A9C76 /* Assets.xcassets */; };
 		EF2614302BD0E451007A9C76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF26142F2BD0E451007A9C76 /* Preview Assets.xcassets */; };
 		EF2614442BD0E550007A9C76 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614432BD0E550007A9C76 /* MainTabView.swift */; };
+		EF2614472BD0E86C007A9C76 /* PhosphorSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF2614462BD0E86C007A9C76 /* PhosphorSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF2614232BD0E450007A9C76 /* iTinder-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTinder-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2614262BD0E450007A9C76 /* iTinder_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTinder_SwiftUIApp.swift; sourceTree = "<group>"; };
 		EF2614282BD0E450007A9C76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EF26142A2BD0E450007A9C76 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EF26142C2BD0E451007A9C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF26142F2BD0E451007A9C76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF2614432BD0E550007A9C76 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2614472BD0E86C007A9C76 /* PhosphorSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,6 @@
 				EF2614392BD0E49F007A9C76 /* Core */,
 				EF2614362BD0E488007A9C76 /* App */,
 				EF2614282BD0E450007A9C76 /* ContentView.swift */,
-				EF26142A2BD0E450007A9C76 /* Item.swift */,
 				EF26142C2BD0E451007A9C76 /* Assets.xcassets */,
 				EF26142E2BD0E451007A9C76 /* Preview Content */,
 			);
@@ -169,6 +168,9 @@
 			dependencies = (
 			);
 			name = "iTinder-SwiftUI";
+			packageProductDependencies = (
+				EF2614462BD0E86C007A9C76 /* PhosphorSwift */,
+			);
 			productName = "iTinder-SwiftUI";
 			productReference = EF2614232BD0E450007A9C76 /* iTinder-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -197,6 +199,9 @@
 				Base,
 			);
 			mainGroup = EF26141A2BD0E450007A9C76;
+			packageReferences = (
+				EF2614452BD0E86C007A9C76 /* XCRemoteSwiftPackageReference "swift" */,
+			);
 			productRefGroup = EF2614242BD0E450007A9C76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2614292BD0E450007A9C76 /* ContentView.swift in Sources */,
-				EF26142B2BD0E450007A9C76 /* Item.swift in Sources */,
 				EF2614272BD0E450007A9C76 /* iTinder_SwiftUIApp.swift in Sources */,
 				EF2614442BD0E550007A9C76 /* MainTabView.swift in Sources */,
 			);
@@ -432,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF2614452BD0E86C007A9C76 /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phosphor-icons/swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF2614462BD0E86C007A9C76 /* PhosphorSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF2614452BD0E86C007A9C76 /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PhosphorSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF26141B2BD0E450007A9C76 /* Project object */;
 }
