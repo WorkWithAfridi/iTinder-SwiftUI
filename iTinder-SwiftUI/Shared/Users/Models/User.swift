@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct User: Identifiable, Equatable{
+    let id: String
+    let fullname: String
+    var age: Int
+    var profileImageUrls: [String]
+}

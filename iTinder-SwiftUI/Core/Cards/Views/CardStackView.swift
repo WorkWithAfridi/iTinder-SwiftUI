@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct CardStackView: View {
+    @StateObject var viewModel = CardsViewModel(service: CardService())
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            ForEach(viewModel.cardModels){
+                card in
+                CardView(model: card, viewModel: viewModel)
+            }
+        }
+        .onChange(of: viewModel.cardModels) { oldValue, newValue in
+            print("DEBUG: Old value count: \(oldValue.count)")
+            print("DEBUG: New value count: \(newValue.count)")
+        }
     }
 }
 

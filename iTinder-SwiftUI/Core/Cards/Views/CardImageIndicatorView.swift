@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct CardImageIndicatorView: View {
+    let currentImageIndex: Int
+    let imageCount: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            ForEach(0..<imageCount, id: \.self){
+                index in
+                Capsule()
+                    .frame(width: (UIScreen.main.bounds.width / CGFloat(imageCount))  * 0.5 , height: 4)
+                    .foregroundStyle(currentImageIndex == index ? .black : .white)
+            }
+        }
     }
 }
 
 #Preview {
-    CardImageIndicatorView()
+    CardImageIndicatorView(currentImageIndex: 1, imageCount: 3)
 }

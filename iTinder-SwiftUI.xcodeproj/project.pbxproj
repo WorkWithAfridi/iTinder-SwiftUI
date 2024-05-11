@@ -13,6 +13,21 @@
 		EF2614302BD0E451007A9C76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF26142F2BD0E451007A9C76 /* Preview Assets.xcassets */; };
 		EF2614442BD0E550007A9C76 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614432BD0E550007A9C76 /* MainTabView.swift */; };
 		EF2614472BD0E86C007A9C76 /* PhosphorSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF2614462BD0E86C007A9C76 /* PhosphorSwift */; };
+		EF26144A2BD0EE4F007A9C76 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614492BD0EE4F007A9C76 /* CardView.swift */; };
+		EF26144D2BD0EF65007A9C76 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EF26144C2BD0EF65007A9C76 /* SDWebImageSwiftUI */; };
+		EF26144F2BD0F2D5007A9C76 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */; };
+		EF2614512BD0FFED007A9C76 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */; };
+		EF2614532BD1050A007A9C76 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614522BD1050A007A9C76 /* SizeConstants.swift */; };
+		EFDD94142BEC71E900A71881 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94132BEC71E900A71881 /* CardStackView.swift */; };
+		EFDD94182BEC734300A71881 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94172BEC734300A71881 /* User.swift */; };
+		EFDD941B2BEC73A400A71881 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD941A2BEC73A400A71881 /* CardModel.swift */; };
+		EFDD941E2BEC73F700A71881 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD941D2BEC73F700A71881 /* CardsViewModel.swift */; };
+		EFDD94212BEC745E00A71881 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94202BEC745E00A71881 /* CardService.swift */; };
+		EFDD94242BEC775800A71881 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94232BEC775800A71881 /* MockData.swift */; };
+		EFDD94262BEC7C0F00A71881 /* ImageScrollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94252BEC7C0F00A71881 /* ImageScrollingOverlay.swift */; };
+		EFDD942A2BEC818F00A71881 /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94292BEC818F00A71881 /* CardImageIndicatorView.swift */; };
+		EFDD942D2BEC8F3E00A71881 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD942C2BEC8F3E00A71881 /* ShimmerView.swift */; };
+		EFDD94302BEC905E00A71881 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = EFDD942F2BEC905E00A71881 /* Shimmer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +37,19 @@
 		EF26142C2BD0E451007A9C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF26142F2BD0E451007A9C76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF2614432BD0E550007A9C76 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		EF2614492BD0EE4F007A9C76 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
+		EF2614522BD1050A007A9C76 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
+		EFDD94132BEC71E900A71881 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		EFDD94172BEC734300A71881 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EFDD941A2BEC73A400A71881 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		EFDD941D2BEC73F700A71881 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		EFDD94202BEC745E00A71881 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		EFDD94232BEC775800A71881 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		EFDD94252BEC7C0F00A71881 /* ImageScrollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollingOverlay.swift; sourceTree = "<group>"; };
+		EFDD94292BEC818F00A71881 /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
+		EFDD942C2BEC8F3E00A71881 /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDD94302BEC905E00A71881 /* Shimmer in Frameworks */,
+				EF26144D2BD0EF65007A9C76 /* SDWebImageSwiftUI in Frameworks */,
 				EF2614472BD0E86C007A9C76 /* PhosphorSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +135,8 @@
 		EF26143C2BD0E4CA007A9C76 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EFDD942B2BEC8F3100A71881 /* Views */,
+				EFDD94152BEC733400A71881 /* Users */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -112,6 +144,8 @@
 		EF26143D2BD0E4CF007A9C76 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EFDD94222BEC774600A71881 /* Mock */,
+				EF2614542BD1050F007A9C76 /* Constants */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -127,6 +161,10 @@
 		EF26143F2BD0E4F7007A9C76 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				EFDD941F2BEC745300A71881 /* Service */,
+				EFDD941C2BEC73EA00A71881 /* ViewModel */,
+				EFDD94192BEC739500A71881 /* Models */,
+				EF2614482BD0EE44007A9C76 /* Views */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -152,6 +190,83 @@
 			path = Messaging;
 			sourceTree = "<group>";
 		};
+		EF2614482BD0EE44007A9C76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF2614492BD0EE4F007A9C76 /* CardView.swift */,
+				EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */,
+				EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */,
+				EFDD94132BEC71E900A71881 /* CardStackView.swift */,
+				EFDD94252BEC7C0F00A71881 /* ImageScrollingOverlay.swift */,
+				EFDD94292BEC818F00A71881 /* CardImageIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF2614542BD1050F007A9C76 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EF2614522BD1050A007A9C76 /* SizeConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EFDD94152BEC733400A71881 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD94162BEC733900A71881 /* Models */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		EFDD94162BEC733900A71881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD94172BEC734300A71881 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFDD94192BEC739500A71881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD941A2BEC73A400A71881 /* CardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFDD941C2BEC73EA00A71881 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD941D2BEC73F700A71881 /* CardsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFDD941F2BEC745300A71881 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD94202BEC745E00A71881 /* CardService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EFDD94222BEC774600A71881 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD94232BEC775800A71881 /* MockData.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		EFDD942B2BEC8F3100A71881 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD942C2BEC8F3E00A71881 /* ShimmerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +285,8 @@
 			name = "iTinder-SwiftUI";
 			packageProductDependencies = (
 				EF2614462BD0E86C007A9C76 /* PhosphorSwift */,
+				EF26144C2BD0EF65007A9C76 /* SDWebImageSwiftUI */,
+				EFDD942F2BEC905E00A71881 /* Shimmer */,
 			);
 			productName = "iTinder-SwiftUI";
 			productReference = EF2614232BD0E450007A9C76 /* iTinder-SwiftUI.app */;
@@ -201,6 +318,8 @@
 			mainGroup = EF26141A2BD0E450007A9C76;
 			packageReferences = (
 				EF2614452BD0E86C007A9C76 /* XCRemoteSwiftPackageReference "swift" */,
+				EF26144B2BD0EF65007A9C76 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				EFDD942E2BEC905E00A71881 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = EF2614242BD0E450007A9C76 /* Products */;
 			projectDirPath = "";
@@ -229,8 +348,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2614292BD0E450007A9C76 /* ContentView.swift in Sources */,
+				EFDD94142BEC71E900A71881 /* CardStackView.swift in Sources */,
+				EF2614512BD0FFED007A9C76 /* SwipeActionIndicatorView.swift in Sources */,
+				EFDD94242BEC775800A71881 /* MockData.swift in Sources */,
+				EFDD942A2BEC818F00A71881 /* CardImageIndicatorView.swift in Sources */,
+				EFDD941E2BEC73F700A71881 /* CardsViewModel.swift in Sources */,
 				EF2614272BD0E450007A9C76 /* iTinder_SwiftUIApp.swift in Sources */,
+				EF26144A2BD0EE4F007A9C76 /* CardView.swift in Sources */,
+				EFDD94182BEC734300A71881 /* User.swift in Sources */,
+				EFDD94262BEC7C0F00A71881 /* ImageScrollingOverlay.swift in Sources */,
+				EFDD94212BEC745E00A71881 /* CardService.swift in Sources */,
+				EF2614532BD1050A007A9C76 /* SizeConstants.swift in Sources */,
+				EFDD942D2BEC8F3E00A71881 /* ShimmerView.swift in Sources */,
 				EF2614442BD0E550007A9C76 /* MainTabView.swift in Sources */,
+				EF26144F2BD0F2D5007A9C76 /* UserInfoView.swift in Sources */,
+				EFDD941B2BEC73A400A71881 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +578,22 @@
 				minimumVersion = 2.1.0;
 			};
 		};
+		EF26144B2BD0EF65007A9C76 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+		EFDD942E2BEC905E00A71881 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -453,6 +601,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EF2614452BD0E86C007A9C76 /* XCRemoteSwiftPackageReference "swift" */;
 			productName = PhosphorSwift;
+		};
+		EF26144C2BD0EF65007A9C76 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF26144B2BD0EF65007A9C76 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		EFDD942F2BEC905E00A71881 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDD942E2BEC905E00A71881 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

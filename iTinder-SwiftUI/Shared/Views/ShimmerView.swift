@@ -1,17 +1,17 @@
-//
-//  ShimmerView.swift
-//  iTinder-SwiftUI
-//
-//  Created by Khondakar Afridi on 9/5/24.
-//
-
 import SwiftUI
+import Shimmer
 
 struct ShimmerView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Rectangle()
+            .shimmering(
+                active: true,
+                animation: .easeInOut(duration: 2).repeatCount(5, autoreverses: false).delay(1)
+            )
     }
 }
+
 
 #Preview {
     ShimmerView()
