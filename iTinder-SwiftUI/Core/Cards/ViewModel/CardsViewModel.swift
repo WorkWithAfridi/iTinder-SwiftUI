@@ -10,6 +10,7 @@ import Foundation
 @MainActor
 class CardsViewModel: ObservableObject{
     private let service: CardService
+    @Published var buttonSwipeAction: SwipeAction?
     
     init(service: CardService){
         self.service = service
