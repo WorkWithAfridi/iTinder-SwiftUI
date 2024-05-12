@@ -18,6 +18,7 @@ struct CardView: View {
     @State private var yOffset: CGFloat = 0
     @State private var degree: Double = 0
     @State private var currentImageIndex = 0
+    @State private var showProfileSheet = false
     
     var body: some View {
         ZStack(alignment: .bottom){
@@ -41,8 +42,13 @@ struct CardView: View {
                 CardImageIndicatorView(currentImageIndex: currentImageIndex, imageCount: user.profileImageUrls.count)
                     .padding(.top, 8)
             }
-            UserInfoView(user: user)
+            UserInfoView(user: user, showProfileSheet: $showProfileSheet)
         }
+        .fullScreenCover(isPresented: $showProfileSheet, content: {
+            VStack{
+                Text("User Profile")
+            }
+        })
         .onReceive(viewModel.$buttonSwipeAction, perform: { action in
             onReceiveSwipeAction(action)
         })

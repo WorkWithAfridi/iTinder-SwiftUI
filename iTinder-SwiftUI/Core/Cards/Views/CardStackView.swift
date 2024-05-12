@@ -10,23 +10,35 @@ import SwiftUI
 struct CardStackView: View {
     @StateObject var viewModel = CardsViewModel(service: CardService())
     var body: some View {
-        VStack(spacing: 12){
-            ZStack{
-                ForEach(viewModel.cardModels){
-                    card in
-                    CardView(model: card, viewModel: viewModel)
+        NavigationStack{
+            VStack(spacing: 12){
+                ZStack{
+                    ForEach(viewModel.cardModels){
+                        card in
+                        CardView(model: card, viewModel: viewModel)
+                    }
                 }
-            }
-            .onChange(of: viewModel.cardModels) { oldValue, newValue in
-                print("DEBUG: Old value count: \(oldValue.count)")
-                print("DEBUG: New value count: \(newValue.count)")
-            }
-            if !viewModel.cardModels.isEmpty {
-                withAnimation {
+                .onChange(of: viewModel.cardModels) { oldValue, newValue in
+                    print("DEBUG: Old value count: \(oldValue.count)")
+                    print("DEBUG: New value count: \(newValue.count)")
+                }
+                if !viewModel.cardModels.isEmpty {
+                    withAnimation {
                         SwipeActionButtonsView(viewModel: viewModel)
-                            .padding(.bottom, 12)
+                            .padding(.bottom, 24)
+                    }
                 }
             }
+            .toolbar(content: {
+                ToolbarItem(placement: .topBarLeading) {
+                    HStack{
+                        Image(systemName: "flame")
+                        Text("iTinder")
+                    }
+                    .font(.title3)
+                    .fontWeight(.bold)
+                }
+            })
         }
     }
 }
