@@ -45,9 +45,7 @@ struct CardView: View {
             UserInfoView(user: user, showProfileSheet: $showProfileSheet)
         }
         .fullScreenCover(isPresented: $showProfileSheet, content: {
-            VStack{
-                Text("User Profile")
-            }
+            UserProfileView(user: user)
         })
         .onReceive(viewModel.$buttonSwipeAction, perform: { action in
             onReceiveSwipeAction(action)
