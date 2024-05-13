@@ -35,7 +35,7 @@ struct CurrentUserProfileHeader: View {
                                 .frame(width: 32, height: 32)
                         }
                         .offset(x: -8, y: 10)
-                        
+                          
                 }
             } placeholder: {
                 ShimmerView()

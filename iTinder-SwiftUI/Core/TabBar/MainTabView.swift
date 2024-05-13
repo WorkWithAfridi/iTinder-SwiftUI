@@ -41,6 +41,7 @@ struct MainTabView: View {
                 }
                 .tag(3)
         }
+        .tint(colorScheme == .dark ?  .purple : .red)
         .accentColor(colorScheme == .dark ?  .purple : .red)
     }
 }

@@ -21,6 +21,8 @@
 		EF26144F2BD0F2D5007A9C76 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */; };
 		EF2614512BD0FFED007A9C76 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */; };
 		EF2614532BD1050A007A9C76 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614522BD1050A007A9C76 /* SizeConstants.swift */; };
+		EFB5F9C32BF1EB0A00C2F855 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5F9C22BF1EB0A00C2F855 /* EditProfileView.swift */; };
+		EFB5F9C52BF1EC6700C2F855 /* EditProfileImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5F9C42BF1EC6700C2F855 /* EditProfileImageGridView.swift */; };
 		EFDD94142BEC71E900A71881 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94132BEC71E900A71881 /* CardStackView.swift */; };
 		EFDD94182BEC734300A71881 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94172BEC734300A71881 /* User.swift */; };
 		EFDD941B2BEC73A400A71881 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD941A2BEC73A400A71881 /* CardModel.swift */; };
@@ -49,6 +51,8 @@
 		EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 		EF2614522BD1050A007A9C76 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
+		EFB5F9C22BF1EB0A00C2F855 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		EFB5F9C42BF1EC6700C2F855 /* EditProfileImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileImageGridView.swift; sourceTree = "<group>"; };
 		EFDD94132BEC71E900A71881 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		EFDD94172BEC734300A71881 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EFDD941A2BEC73A400A71881 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
@@ -80,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				EF138C432BF143AD0058A059 /* UserProfileView.swift */,
-				EF138C492BF1DEE00058A059 /* CurrentUserProfileHeader.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -88,6 +91,8 @@
 		EF138C462BF1DE840058A059 /* CurrentUserProfile */ = {
 			isa = PBXGroup;
 			children = (
+				EFB5F9C12BF1EAF000C2F855 /* EditProfile */,
+				EF138C492BF1DEE00058A059 /* CurrentUserProfileHeader.swift */,
 				EF138C472BF1DE940058A059 /* CurrentUserProfileView.swift */,
 			);
 			path = CurrentUserProfile;
@@ -241,6 +246,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		EFB5F9C12BF1EAF000C2F855 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5F9C22BF1EB0A00C2F855 /* EditProfileView.swift */,
+				EFB5F9C42BF1EC6700C2F855 /* EditProfileImageGridView.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
 		EFDD94152BEC733400A71881 /* Users */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +398,7 @@
 				EFDD94142BEC71E900A71881 /* CardStackView.swift in Sources */,
 				EF2614512BD0FFED007A9C76 /* SwipeActionIndicatorView.swift in Sources */,
 				EFDD94242BEC775800A71881 /* MockData.swift in Sources */,
+				EFB5F9C52BF1EC6700C2F855 /* EditProfileImageGridView.swift in Sources */,
 				EF138C442BF143AD0058A059 /* UserProfileView.swift in Sources */,
 				EFDD942A2BEC818F00A71881 /* CardImageIndicatorView.swift in Sources */,
 				EFDD941E2BEC73F700A71881 /* CardsViewModel.swift in Sources */,
@@ -392,6 +407,7 @@
 				EFDD94182BEC734300A71881 /* User.swift in Sources */,
 				EFDD94262BEC7C0F00A71881 /* ImageScrollingOverlay.swift in Sources */,
 				EFDD94212BEC745E00A71881 /* CardService.swift in Sources */,
+				EFB5F9C32BF1EB0A00C2F855 /* EditProfileView.swift in Sources */,
 				EF2614532BD1050A007A9C76 /* SizeConstants.swift in Sources */,
 				EFDD942D2BEC8F3E00A71881 /* ShimmerView.swift in Sources */,
 				EF138C4A2BF1DEE00058A059 /* CurrentUserProfileHeader.swift in Sources */,

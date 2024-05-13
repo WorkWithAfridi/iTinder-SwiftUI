@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
+    @State private var showEditProfile = false
     let user: User
     var body: some View {
         NavigationStack{
             List{
                 CurrentUserProfileHeader(user: user)
+                    .onTapGesture {
+                        showEditProfile.toggle()
+                    }
                 Section("Account Settings"){
                     HStack{
                         Text("Name")
@@ -30,7 +34,7 @@ struct CurrentUserProfileView: View {
                 }
                 Section{
                     Button(action: {}, label: {
-                        Text("Logout")
+                        Text("Logout")  
                             .font(.subheadline)
                             .foregroundStyle(.red)
                     })
@@ -43,6 +47,11 @@ struct CurrentUserProfileView: View {
                     })
                 }
             }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .fullScreenCover(isPresented: $showEditProfile, content: {
+                EditProfileView(user: user)
+            })
         }
     }
 }
