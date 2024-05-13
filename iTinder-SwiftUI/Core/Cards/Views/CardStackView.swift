@@ -22,12 +22,11 @@ struct CardStackView: View {
                     print("DEBUG: Old value count: \(oldValue.count)")
                     print("DEBUG: New value count: \(newValue.count)")
                 }
-                if !viewModel.cardModels.isEmpty {
-                    withAnimation {
-                        SwipeActionButtonsView(viewModel: viewModel)
-                            .padding(.bottom, 24)
-                    }
-                }
+//                if !viewModel.cardModels.isEmpty {
+//                    withAnimation {
+//                        SwipeActionButtonsView(viewModel: viewModel)
+//                    }
+//                }
             }
             .toolbar(content: {
                 ToolbarItem(placement: .topBarLeading) {
