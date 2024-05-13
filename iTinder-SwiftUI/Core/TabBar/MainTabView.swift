@@ -34,8 +34,7 @@ struct MainTabView: View {
                     Image(systemName: "bubble.left.and.bubble.right")
                 }
                 .tag(2)
-            
-            Text("Profile View")
+            CurrentUserProfileView(user: MockData.users.first!)
                 .tabItem {
                     Image(systemName: "person")
                         .foregroundStyle(.pink)

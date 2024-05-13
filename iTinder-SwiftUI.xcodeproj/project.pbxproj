@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EF138C442BF143AD0058A059 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF138C432BF143AD0058A059 /* UserProfileView.swift */; };
+		EF138C482BF1DE940058A059 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF138C472BF1DE940058A059 /* CurrentUserProfileView.swift */; };
+		EF138C4A2BF1DEE00058A059 /* CurrentUserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF138C492BF1DEE00058A059 /* CurrentUserProfileHeader.swift */; };
 		EF2614272BD0E450007A9C76 /* iTinder_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614262BD0E450007A9C76 /* iTinder_SwiftUIApp.swift */; };
 		EF2614292BD0E450007A9C76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614282BD0E450007A9C76 /* ContentView.swift */; };
 		EF26142D2BD0E451007A9C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF26142C2BD0E451007A9C76 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		EF138C432BF143AD0058A059 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		EF138C472BF1DE940058A059 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		EF138C492BF1DEE00058A059 /* CurrentUserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeader.swift; sourceTree = "<group>"; };
 		EF2614232BD0E450007A9C76 /* iTinder-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTinder-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2614262BD0E450007A9C76 /* iTinder_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTinder_SwiftUIApp.swift; sourceTree = "<group>"; };
 		EF2614282BD0E450007A9C76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF138C452BF1DE7B0058A059 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EF138C432BF143AD0058A059 /* UserProfileView.swift */,
+				EF138C492BF1DEE00058A059 /* CurrentUserProfileHeader.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		EF138C462BF1DE840058A059 /* CurrentUserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EF138C472BF1DE940058A059 /* CurrentUserProfileView.swift */,
+			);
+			path = CurrentUserProfile;
+			sourceTree = "<group>";
+		};
 		EF26141A2BD0E450007A9C76 = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +199,8 @@
 		EF2614402BD0E4FB007A9C76 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				EF138C432BF143AD0058A059 /* UserProfileView.swift */,
+				EF138C462BF1DE840058A059 /* CurrentUserProfile */,
+				EF138C452BF1DE7B0058A059 /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -357,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF05F292BEFDCFA00A8D639 /* SwipeActionButtonsView.swift in Sources */,
+				EF138C482BF1DE940058A059 /* CurrentUserProfileView.swift in Sources */,
 				EF2614292BD0E450007A9C76 /* ContentView.swift in Sources */,
 				EFDD94142BEC71E900A71881 /* CardStackView.swift in Sources */,
 				EF2614512BD0FFED007A9C76 /* SwipeActionIndicatorView.swift in Sources */,
@@ -371,6 +394,7 @@
 				EFDD94212BEC745E00A71881 /* CardService.swift in Sources */,
 				EF2614532BD1050A007A9C76 /* SizeConstants.swift in Sources */,
 				EFDD942D2BEC8F3E00A71881 /* ShimmerView.swift in Sources */,
+				EF138C4A2BF1DEE00058A059 /* CurrentUserProfileHeader.swift in Sources */,
 				EFF05F2B2BEFE10600A8D639 /* SwipeAction.swift in Sources */,
 				EF2614442BD0E550007A9C76 /* MainTabView.swift in Sources */,
 				EF26144F2BD0F2D5007A9C76 /* UserInfoView.swift in Sources */,
