@@ -10,7 +10,7 @@ import SwiftUI
 struct CardStackView: View {
     @StateObject var viewModel = CardsViewModel(service: CardService())
     var body: some View {
-        NavigationStack{
+        NavigationView{
             VStack(spacing: 12){
                 ZStack{
                     ForEach(viewModel.cardModels){

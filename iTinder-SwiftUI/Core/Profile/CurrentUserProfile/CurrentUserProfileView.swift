@@ -11,7 +11,7 @@ struct CurrentUserProfileView: View {
     @State private var showEditProfile = false
     let user: User
     var body: some View {
-        NavigationStack{
+        NavigationView{
             List{
                 CurrentUserProfileHeader(user: user)
                     .onTapGesture {

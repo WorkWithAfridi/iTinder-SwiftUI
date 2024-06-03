@@ -21,6 +21,7 @@
 		EF26144F2BD0F2D5007A9C76 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */; };
 		EF2614512BD0FFED007A9C76 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */; };
 		EF2614532BD1050A007A9C76 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2614522BD1050A007A9C76 /* SizeConstants.swift */; };
+		EF3BB4682C0DB84B0030D4AC /* UserMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3BB4672C0DB84B0030D4AC /* UserMatchView.swift */; };
 		EFB5F9C32BF1EB0A00C2F855 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5F9C22BF1EB0A00C2F855 /* EditProfileView.swift */; };
 		EFB5F9C52BF1EC6700C2F855 /* EditProfileImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5F9C42BF1EC6700C2F855 /* EditProfileImageGridView.swift */; };
 		EFDD94142BEC71E900A71881 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD94132BEC71E900A71881 /* CardStackView.swift */; };
@@ -51,6 +52,7 @@
 		EF26144E2BD0F2D5007A9C76 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		EF2614502BD0FFED007A9C76 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 		EF2614522BD1050A007A9C76 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
+		EF3BB4672C0DB84B0030D4AC /* UserMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMatchView.swift; sourceTree = "<group>"; };
 		EFB5F9C22BF1EB0A00C2F855 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		EFB5F9C42BF1EC6700C2F855 /* EditProfileImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileImageGridView.swift; sourceTree = "<group>"; };
 		EFDD94132BEC71E900A71881 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		EF2614392BD0E49F007A9C76 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EF3BB4652C0DB83B0030D4AC /* Matches */,
 				EF26143F2BD0E4F7007A9C76 /* Cards */,
 				EF2614422BD0E505007A9C76 /* Messaging */,
 				EF2614402BD0E4FB007A9C76 /* Profile */,
@@ -244,6 +247,22 @@
 				EF2614522BD1050A007A9C76 /* SizeConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		EF3BB4652C0DB83B0030D4AC /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				EF3BB4662C0DB8400030D4AC /* Views */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		EF3BB4662C0DB8400030D4AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF3BB4672C0DB84B0030D4AC /* UserMatchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EFB5F9C12BF1EAF000C2F855 /* EditProfile */ = {
@@ -405,6 +424,7 @@
 				EF2614272BD0E450007A9C76 /* iTinder_SwiftUIApp.swift in Sources */,
 				EF26144A2BD0EE4F007A9C76 /* CardView.swift in Sources */,
 				EFDD94182BEC734300A71881 /* User.swift in Sources */,
+				EF3BB4682C0DB84B0030D4AC /* UserMatchView.swift in Sources */,
 				EFDD94262BEC7C0F00A71881 /* ImageScrollingOverlay.swift in Sources */,
 				EFDD94212BEC745E00A71881 /* CardService.swift in Sources */,
 				EFB5F9C32BF1EB0A00C2F855 /* EditProfileView.swift in Sources */,
