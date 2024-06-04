@@ -8,26 +8,38 @@
 import SwiftUI
 
 struct CardStackView: View {
+    @State var showMatchedView = true
     @StateObject var viewModel = CardsViewModel(service: CardService())
+    @EnvironmentObject var matchManage: MatchManager
+    
     var body: some View {
         NavigationView{
-            VStack(spacing: 12){
-                ZStack{
-                    ForEach(viewModel.cardModels){
-                        card in
-                        CardView(model: card, viewModel: viewModel)
+            ZStack {
+                VStack(spacing: 12){
+                    ZStack{
+                        ForEach(viewModel.cardModels){
+                            card in
+                            CardView(model: card, viewModel: viewModel)
+                        }
+                    }
+                    .onChange(of: viewModel.cardModels) { oldValue, newValue in
+                        print("DEBUG: Old value count: \(oldValue.count)")
+                        print("DEBUG: New value count: \(newValue.count)")
+                    }
+                    if !viewModel.cardModels.isEmpty {
+                        withAnimation {
+                            SwipeActionButtonsView(viewModel: viewModel)
+                        }
                     }
                 }
-                .onChange(of: viewModel.cardModels) { oldValue, newValue in
-                    print("DEBUG: Old value count: \(oldValue.count)")
-                    print("DEBUG: New value count: \(newValue.count)")
+                .blur(radius: showMatchedView ? 20 : 0)
+                if showMatchedView {
+                    UserMatchView(show: $showMatchedView)
                 }
-//                if !viewModel.cardModels.isEmpty {
-//                    withAnimation {
-//                        SwipeActionButtonsView(viewModel: viewModel)
-//                    }
-//                }
             }
+            .onReceive(matchManage.$matchedUser, perform: { user in
+                showMatchedView = user != nil
+            })
             .toolbar(content: {
                 ToolbarItem(placement: .topBarLeading) {
                     HStack{
@@ -44,4 +56,5 @@ struct CardStackView: View {
 
 #Preview {
     CardStackView()
+        .environmentObject(MatchManager())
 }

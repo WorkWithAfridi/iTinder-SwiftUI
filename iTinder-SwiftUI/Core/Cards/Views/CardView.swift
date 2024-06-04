@@ -12,6 +12,8 @@ import SDWebImageSwiftUI
 struct CardView: View {
     let model: CardModel
     
+    @EnvironmentObject var matchManger: MatchManager
+    
     @ObservedObject var viewModel: CardsViewModel
     
     @State private var xOffset: CGFloat = 0
@@ -106,6 +108,7 @@ private extension CardView{
                 degree = 12
         } completion: {
             viewModel.removeCard(model)
+            matchManger.checkForMatch(withUser: user)
         }
     }
     

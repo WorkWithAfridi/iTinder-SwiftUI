@@ -10,10 +10,13 @@ import SwiftData
 
 @main
 struct iTinder_SwiftUIApp: App {
-
+    
+    @ObservedObject var matchManager = MatchManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(matchManager)
         }
     }
 }
